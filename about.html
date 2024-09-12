@@ -20,7 +20,8 @@
         </ul>
     </nav>
     <section class="about-table">
-
+     <p>Have Questions? Fill out the form</p>
+        <img src="./images/about-page.webp" alt="about-image">
 
         <table>
             <tr>
@@ -51,7 +52,7 @@
     </section>
 
     <section class="about-form">
-        <form id="contactForm">
+        <form id="contactForm" onsubmit="return validateEmails()">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required><br>
         
@@ -68,11 +69,19 @@
             <textarea id="question" name="question" placeholder="Ask your question" required></textarea>
         </form>
     </section>
+    <aside>
+        <h3>Quick Facts About North Carolina</h3>
+        <ul>
+            <li>It is estimated that around 140,000 peoplewere added to tthe permanent resident Population of North Carolina between july 2022 to july 2023</li>
+           
+        </ul>
+    </aside>
 
     <footer>
         <p>&copy; 2024 Visit North Carolina By Fred Evans.</p>
     </footer>
     <script src="./forms.js"></script>
+   
 </body>
 
 </html>
